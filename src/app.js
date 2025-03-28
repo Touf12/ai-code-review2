@@ -11,11 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: [
-      "https://toufu-ai-code-reviewer.netlify.app",
-      "http://localhost:3000", // backend
-      "http://localhost:5173", // <-- frontend Vite dev server
-    ],
+    origin: "https://ai-code-review9.onrender.com", // apne frontend ka URL yaha dedo
     credentials: true,
   })
 );
